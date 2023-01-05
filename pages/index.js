@@ -48,9 +48,9 @@ export default function Home({ posts }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Naga Digital Showroom</title>
-        <meta name="description" content="A blog made by Naga Apparel" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Naga Apparel Blog - Digital Showroom</title>
+        <meta name="description" content="Naga Apparel blog" />
+        <link rel="icon" href="/NAGA_round.ico" />
       </Head>
 
       <main className={styles.main}>

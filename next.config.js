@@ -8,6 +8,10 @@ const nextConfig = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  experimental: {
+    workerThreads: false,
+    cpus: 1
+  },
 };
 
 module.exports = nextConfig;

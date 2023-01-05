@@ -4,9 +4,9 @@ function Nav() {
   return (
     <nav>
       {/* <Link href="/">Our Digital Showroom</Link> */}
-   
+      <a href="/" >
       <img src="../NAGA_round.ico/" />
-      
+      </a>
     </nav>
   );
 }

@@ -71,7 +71,7 @@ export default function BlogPost({ post }) {
       />
       <div className={styles.title}>
         <div className={styles.authdetails}>
-          <img src={post.author.avatar.url} alt={post.author.name} />
+          <img src={post.author.avatar.url} alt={post.author.name} className="rounded"/>
           <div className={styles.authtext}>
             <h6>By {post.author.name} </h6>
             <h6 className={styles.date}>
@@ -81,15 +81,20 @@ export default function BlogPost({ post }) {
         </div>
 
         {/* <div className={inter.className} > */}
-          <h2 className="m-4, text-center">{post.title}</h2>
+          <h2 className="m-4, text-center rounded">{post.title}</h2>
         {/* </div> */}
       </div>
 
-      <div className="m-4, text-center">
+      <div className="m-4, text-center rounded">
         <div
           className={styles.content}
           dangerouslySetInnerHTML={{ __html: post.content.html }}
         ></div>
+      </div>
+      <div class="container">
+        <ul className="">
+          <a href="/" className="text-black text-small text-decoration-none"> <small> <i class="fa-solid fa-arrow-left text-black">← BACK </i></small> </a>
+        </ul>
       </div>
     </main>
   );

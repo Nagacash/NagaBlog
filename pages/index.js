@@ -48,8 +48,8 @@ export default function Home({ posts }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Digital Showroom</title>
-        <meta name="description" content="A blog tutorial made with JAMstack" />
+        <title>Naga Digital Showroom</title>
+        <meta name="description" content="A blog made by Naga Apparel" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

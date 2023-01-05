@@ -1,7 +1,20 @@
 import { GraphQLClient, gql } from "graphql-request";
 import styles from "../../styles/Slug.module.css";
 import moment from "moment";
-// import { Inter } from '@next/font/google'
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  PinterestShareButton,
+  PinterestIcon,
+  RedditShareButton,
+  RedditIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+} from 'next-share';
+
+
 
 const graphcms = new GraphQLClient(
   " https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clchrscoy1lfq01t648bganra/master"
@@ -71,7 +84,7 @@ export default function BlogPost({ post }) {
       />
       <div className={styles.title}>
         <div className={styles.authdetails}>
-          <img src={post.author.avatar.url} alt={post.author.name} className="rounded"/>
+          <img src={post.author.avatar.url} alt={post.author.name} className="rounded" />
           <div className={styles.authtext}>
             <h6>By {post.author.name} </h6>
             <h6 className={styles.date}>
@@ -81,7 +94,7 @@ export default function BlogPost({ post }) {
         </div>
 
         {/* <div className={inter.className} > */}
-          <h2 className="m-4, text-center rounded">{post.title}</h2>
+        <h2 className="m-4, text-center rounded">{post.title}</h2>
         {/* </div> */}
       </div>
 
@@ -90,6 +103,38 @@ export default function BlogPost({ post }) {
           className={styles.content}
           dangerouslySetInnerHTML={{ __html: post.content.html }}
         ></div>
+
+
+        <div className="m-5">
+          <h3>Social Share </h3>
+          <FacebookShareButton
+            // {/* Url you want to share */}
+            url={'http://localhost:3000'} >
+            <FacebookIcon size={32} round />
+          </FacebookShareButton>
+          <PinterestShareButton
+            // {/* Url you want to share */}
+            url={'http://localhost:3000'} >
+            <PinterestIcon size={32} round />
+          </PinterestShareButton>
+          <RedditShareButton
+            // {/* Url you want to share */}
+            url={'http://localhost:3000'} >
+            <RedditIcon size={32} round />
+          </RedditShareButton>
+          <WhatsappShareButton
+            // {/* Url you want to share */}
+            url={'http://localhost:3000'} >
+            <WhatsappIcon size={32} round />
+          </WhatsappShareButton>
+          <LinkedinShareButton
+            // {/* Url you want to share */}
+            url={'http://localhost:3000'} >
+            <LinkedinIcon size={32} round />
+          </LinkedinShareButton>
+        </div>
+        <br></br><br></br><br></br><br></br>
+
       </div>
       <div class="container">
         <ul className="">

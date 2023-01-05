@@ -23,7 +23,6 @@ function MyApp({ Component, pageProps }) {
           Stream It Now on Spotify"!
         </div>
       </h1>
-
       <br></br><br></br>
       <Hero />
       <br></br><br></br><br></br>

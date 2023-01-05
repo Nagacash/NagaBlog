@@ -1,9 +1,10 @@
 import { GraphQLClient, gql } from "graphql-request";
 import styles from "../../styles/Slug.module.css";
 import moment from "moment";
+// import { Inter } from '@next/font/google'
 
 const graphcms = new GraphQLClient(
-   " https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clchrscoy1lfq01t648bganra/master"
+  " https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clchrscoy1lfq01t648bganra/master"
 );
 
 const QUERY = gql`
@@ -58,6 +59,8 @@ export async function getStaticProps({ params }) {
   };
 }
 
+// const inter = Inter({ subsets: ['latin'] })
+
 export default function BlogPost({ post }) {
   return (
     <main className={styles.blog}>
@@ -76,13 +79,18 @@ export default function BlogPost({ post }) {
             </h6>
           </div>
         </div>
-        <h2>{post.title}</h2>
+
+        {/* <div className={inter.className} > */}
+          <h2 className="m-4, text-center">{post.title}</h2>
+        {/* </div> */}
       </div>
 
-      <div
-        className={styles.content}
-        dangerouslySetInnerHTML={{ __html: post.content.html }}
-      ></div>
+      <div className="m-4, text-center">
+        <div
+          className={styles.content}
+          dangerouslySetInnerHTML={{ __html: post.content.html }}
+        ></div>
+      </div>
     </main>
   );
 }

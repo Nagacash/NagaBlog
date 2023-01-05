@@ -63,7 +63,7 @@ export async function getStaticProps({ params }) {
 
 export default function BlogPost({ post }) {
   return (
-    <main className={styles.blog}>
+    <main id="content" className={styles.blog}>
       <img
         className={styles.cover}
         src={post.coverPhoto.url}

@@ -50,11 +50,17 @@
   @media screen and (max-width: 768px) {
     .blog {
       margin: 0rem 2rem;
+      text-align: center;
     }
     .content {
       width: 100%;
+      text-align: center;
     }
     .content img {
       width: 100%;
+      text-align: center;
     }
+    .container{
+      text-align: center;
+}
   }

@@ -15,5 +15,11 @@
 
 @media screen and (max-width: 768px) {
   .main {
+    text-align: center;
+
   }
+  .footer {
+    width: 120%; 
+    text-align: center;
+}
 }

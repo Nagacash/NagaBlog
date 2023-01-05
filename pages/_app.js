@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <div className="m-4 text-center">
         <Nav />
-        <h1 className="p-5 text1">Let's talk fashion, knowledge, and music! </h1><br></br><br></br><h2>Our blog is your go-to for the latest style tips, the smartest insights, and the hottest tracks. Get ready to stay ahead of the game with us.</h2>
+        <h1 className="p-5 text1">Let's talk fashion, knowledge, and music! <br></br><br></br><div className="">Our blog is your go-to for the latest style tips, the smartest insights, and the hottest tracks. Get ready to stay ahead of the game with us.</div></h1>
         <div className="">
           <Component {...pageProps} />;
         </div>

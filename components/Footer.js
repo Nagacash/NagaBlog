@@ -20,10 +20,18 @@ const Footer = () => {
                         </div>
                     </small>
                 </button>
-                {/* <small className="text-white font-weight-light">Copyright &copy;
 
-                </small> */}
+                <button className="rounded btn btn-warning m-3">
 
+                    <a href="https://naga.nftify.network/" className="text-black text-decoration-none font-weight-light">Our NFT Marketplace</a>
+
+                    <small>
+                        <div className="text-white text-right m-1">
+                            Buy your instrumentals
+                        </div>
+                    </small>
+                </button>
+               
 
             </div>
 

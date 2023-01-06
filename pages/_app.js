@@ -15,15 +15,17 @@ function MyApp({ Component, pageProps }) {
       </div>
 
       <br></br>
-      <h1 className="p-5 text1   text-center">"Unlock the Mystical Sounds of the Naga:<br></br> A Shortlord Productions.  
-      <br></br> <br></br>
-      <div className="text-warning text-small">- NAGA Sampler Vol. 1" -</div>
-      <br></br>
+      <h1 className="p-5 text1   text-center">"Unlock the Mystical Sounds of the Naga:<br></br> A Shortlord Productions.
+        <br></br> <br></br>
+        <div className="text-warning text-small">- NAGA Sampler Vol. 1" -</div>
+        <br></br>
         <div className="text-center">
           Stream It Now on Spotify"!
         </div>
       </h1>
-      <br></br><br></br>
+      <br></br>
+
+      <br></br>
       <Hero />
       <br></br><br></br><br></br>
       <Footer />

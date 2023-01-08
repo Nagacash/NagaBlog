@@ -6,9 +6,9 @@ import Hero from "../components/Hero";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <div className="m-4 text-center">
+      <div className="m-4 text-center centerstuff">
         <Nav />
-        <h1 className="p-5 text1">Let's talk fashion, knowledge, and music! <br></br><br></br><div className="">Our blog is your go-to for the latest style tips, the smartest insights, and the hottest tracks. Get ready to stay ahead of the game with us.</div></h1>
+        <h1 className="p-5 text1 centerstuff">Let's talk fashion, knowledge, and music! <br></br><br></br><div className="text2">Our blog is your go-to for the latest style tips, the smartest insights, and the hottest tracks. Get ready to stay ahead of the game with us.</div></h1>
         <div className="">
           <Component {...pageProps} />;
         </div>

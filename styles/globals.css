@@ -72,6 +72,11 @@ a {
   animation: text 3s 1;
 }
 
+.logos{
+  width: 150px;
+  height: 150px;
+ }
+
 @media screen and (max-width: 768px) {
   body {
     margin: 0% 0%;
@@ -79,6 +84,42 @@ a {
   nav {
     padding: 3rem 0rem;
   }
+
+  .text1{
+    font-size: 1.5em;
+  }
+
 }
+.text2{
+  font-size: 15px;
+}
+
+.centerstuff{
+  margin-bottom: 80px;
+}
+
+.centerstuff2{
+  margin-left: -15px;
+}
+
+.logos{
+  width: 50px;
+  height: 50px;
+ }
+
+.Home_main{
+  margin-right: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 3rem;
+
+}
+
+.bt{
+  width: 250px;
+  height: 150px;
+}
+
+
 
 

@@ -14,12 +14,25 @@
 }
 
 @media screen and (max-width: 768px) {
-  .main {
+  .BlogCard_card {
+    margin: 1rem 3rem;
     text-align: center;
-
+    padding-left: 60px;
   }
+
   .footer {
-    width: 120%; 
+    width: 120%;
     text-align: center;
+  }
+
+  
+
+.Home_main{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 3rem;
+
 }
+
 }

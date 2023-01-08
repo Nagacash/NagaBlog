@@ -5,7 +5,7 @@ function Nav() {
     <nav>
       {/* <Link href="/">Our Digital Showroom</Link> */}
       <a href="/" >
-      <img src="../NAGA_round.ico/" />
+      <img src="../NAGA_round.ico/" className="logos"/>
       </a>
     </nav>
   );

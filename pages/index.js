@@ -51,23 +51,27 @@ export default function Home({ posts }) {
       <Head>
         <title>Naga Apparel Blog - Digital Showroom</title>
         <meta name="description" content="Naga Apparel blog" />
-        <link rel="icon" href="/NAGA_round.ico" />
+        <div className="logos">
+        <link rel="icon" href="/NAGA_round.ico"  />
+        </div>
       </Head>
+      <div className="centerstuff2">
+        <main className={styles.main}>
+          {posts.map((post) => (
+            <BlogCard
+              title={post.title}
+              author={post.author}
+              coverPhoto={post.coverPhoto}
+              key={post.id}
+              datePublished={post.datePublished}
+              slug={post.slug}
+            />
+          ))}
 
-      <main className={styles.main}>
-        {posts.map((post) => (
-          <BlogCard
-            title={post.title}
-            author={post.author}
-            coverPhoto={post.coverPhoto}
-            key={post.id}
-            datePublished={post.datePublished}
-            slug={post.slug}
-          />
-        ))}
 
+        </main>
 
-      </main>
+      </div>
     </div>
   );
 }

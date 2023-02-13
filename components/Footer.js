@@ -16,7 +16,7 @@ const Footer = () => {
 
                     <small>
                         <div className="text-white text-right m-1">
-                            Designed by: Maurice Holda
+                            Designed by: Maurice Holda 2023
                         </div>
                     </small>
                 </button>
